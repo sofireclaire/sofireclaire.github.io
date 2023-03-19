@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sofia Lopez</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/Custom.css" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <script src="js/background.js" rel="script"></script>
+    <script src="js/bootstrap.js" rel="script"></script>
+    <script>
+        $(window)
+            .scroll(function () {
+                // selectors
+                let $window = $(window),
+                    $body = $("body"),
+                    $panel = $(".panel");
+                let $links = $(".links");
+
+                let scroll = $window.scrollTop() + $window.height() / 3;
+
+                $panel.each(function () {
+                    let $this = $(this);
+
+                    if (
+                        $this.position().top <= scroll &&
+                        $this.position().top + $this.height() > scroll
+                    ) {
+                        $body.removeClass(function (index, css) {
+                            return (css.match(/(^|\s)color-\S+/g) || []).join(" ");
+                        });
+
+                        $body.addClass("color-" + $(this).data("color"));
+                        if($(this).data("color") === "white"){
+                            $links.removeClass("text-white");
+                            $links.addClass("text-black");
+                        }
+                        else{
+                            $links.removeClass("text-black");
+                            $links.addClass("text-white");
+                        }
+                    }
+                });
+            })
+            .scroll();
+    </script>
+</head>
+<body>
+<div class="panel black vh-100" data-color="black">
+    <div class="row ms-3">
+        <div class="col-auto col-3 ms-3 mt-5 position-fixed">
+            <div class="pt-4">
+                <a class="links text-white text-decoration-none" href="https://www.linkedin.com/in/sofia-lopez-7250811ba/">
+                    <i class="ti-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-auto col-md-2"></div>
+        <div class="col-auto col-md-6 mt-5 pt-5">
+            <h1 class="text-white fw-bold massive-font">
+                Sofia Lopez
+            </h1>
+            <h2 class="big-font text-white">
+                Designer
+            </h2>
+        </div>
+    </div>
+    <div class="space-sm"></div>
+    <div class="mt-5 d-flex justify-content-center text-white">
+        <div>
+            <div>
+                <h2>Portfolio</h2>
+            </div>
+            <div class="mt-5">
+                <i class="ti-arrow-down float-element"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel" data-color="white"></div>
+<div style="height: 700px"></div>
+</body>
+</html>
