@@ -16,6 +16,18 @@ body{
     background-color: #f5f5f5;
 }
 
+.town-bg{
+    background-color: #41393D;
+}
+
+.logo-bg{
+    background-color: #B9B4F7;
+}
+
+.photo-bg{
+    background-color: #DCE5D6;
+}
+
 .massive-font{
     font-size: 9rem;
 }
