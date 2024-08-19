@@ -7,180 +7,95 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/Custom.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/themify-icons.css" rel="stylesheet">
-    <script src="js/background.js" rel="script"></script>
-    <script src="js/bootstrap.js" rel="script"></script>
-    <script>
-        $(window)
-            .scroll(function () {
-                // selectors
-                let $window = $(window),
-                    $body = $("body"),
-                    $panel = $(".panel");
-                let $links = $(".links");
-
-                let scroll = $window.scrollTop() + $window.height() / 3;
-
-                $panel.each(function () {
-                    let $this = $(this);
-
-                    if (
-                        $this.position().top <= scroll &&
-                        $this.position().top + $this.height() > scroll
-                    ) {
-                        $body.removeClass(function (index, css) {
-                            return (css.match(/(^|\s)color-\S+/g) || []).join(" ");
-                        });
-
-                        $body.addClass("color-" + $(this).data("color"));
-                        if($(this).data("color") === "white"){
-                            $links.removeClass("text-white");
-                            $links.addClass("text-black");
-                        }
-                        else{
-                            $links.removeClass("text-black");
-                            $links.addClass("text-white");
-                        }
-                    }
-                });
-            })
-            .scroll();
-    </script>
+    <link rel="icon" type="image/x-icon" href="/images/Logos/Pink_SL_Logo.png">
 </head>
 <body>
-<div class="panel black vh-100" data-color="black">
-    <div class="row ms-3">
-        <div class="col-auto col-3 ms-3 mt-5 position-fixed">
-            <div class="pt-4">
-                <a class="links fs-3 text-white text-decoration-none" href="https://www.linkedin.com/in/sofia-lopez-7250811ba/">
-                    <i class="ti-linkedin"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-auto col-md-2"></div>
-        <div class="col-auto col-md-10 mt-5 pt-5">
-            <h1 class="text-white fw-bold massive-font">
-                Sofia Lopez
-            </h1>
-            <h2 class="big-font text-white">
-                Designer
-            </h2>
-        </div>
-    </div>
-    <div class="space-sm"></div>
-    <div class="mt-5 d-flex justify-content-center text-white">
-        <div>
-            <div>
-                <h2>Portfolio</h2>
-            </div>
-            <div class="mt-5">
-                <i class="ti-arrow-down float-element"></i>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="panel" data-color="white"></div>
-<div class="row">
-    <div class="col-auto mt-5 col-md-12 town-bg banner-height">
-        <img class="image-fit" src="images/Town/town-logo.png" alt="Town logo"/>
-    </div>
-    <div class="grey-bg">
-        <div class="row justify-content-center mt-5">
-            <div class="col-auto col-md-6">
-                <p class="text-black">
-                    Town is a sophisticated Chinese restaurant that embodies luxury and refinement. As part of my
-                    coursework at Southern New Hampshire University, I designed a menu, brochure, and drink menu that
-                    adhered to the brand's strict guidelines. Employing my skills in Adobe InDesign and Illustrator,
-                    I crafted elegant and visually stunning materials that reflect the restaurant's high-end aesthetic.
-                </p>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-auto col-md-4">
-                <img class="img-fluid" src="images/Town/menu.png" alt="Town menu">
-            </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-auto col-md-3 my-auto">
-                <img class="img-fluid" src="images/Town/brochure.png" alt="Town brochure page 1">
-            </div>
-            <div class="col-auto col-md-3">
-                <img class="img-fluid" src="images/Town/drink-menu.png" alt="Town drink menu">
-            </div>
-            <div class="col-auto col-md-3 my-auto">
-                <img class="img-fluid" src="images/Town/brochure2.png" alt="Town brochure page 2">
-            </div>
-        </div>
-        <div class="work-space"></div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-auto col-md-12 logo-bg banner-height d-flex justify-content-center align-items-center">
-        <h2 class="fs-1 fw-bold text-black">Logos</h2>
-    </div>
-    <div class="grey-bg">
-        <div class="row justify-content-center align-items-center mt-5">
-            <div class="col-md-5">
-                <img class="img-fluid" src="images/Logos/sofire-graphics-logo.jpg" alt="Sofire Graphics Logo">
-            </div>
-            <div class="col-md-5 px-5">
-                <p>
-                    As a student at Southern New Hampshire University, I launched my own graphic design venture and
-                    began by crafting a logo that would represent my brand. Starting with rough sketches, I explored
-                    various concepts before refining my ideas in Adobe Illustrator. This software allowed me to fully
-                    unleash my creativity and bring my vision to life with precision and finesse.
-                </p>
-            </div>
-        </div>
-        <div class="row justify-content-center align-items-center mt-5 pt-5">
-            <div class="col-md-5 px-5">
-                <p>
-                    I had the privilege of creating a logo for Greenfield Iowa's popular swap meet. Drawing inspiration
-                    from the town's emblem, I began with a few rough sketches and aimed to strike a balance between
-                    uniqueness and familiarity. My goal was to craft a design that would be easily recognizable as
-                    representing Greenfield, while also infusing it with a touch of creativity. Through careful
-                    consideration and attention to detail, I achieved a logo that captured the essence of the event
-                    and the community it serves.
-                </p>
-            </div>
-            <div class="col-md-5">
-                <img class="img-fluid" src="images/Logos/swapmeet-logo.png" alt="Greenfield swap meet logo">
-            </div>
-        </div>
-        <div class="work-space"></div>
-    </div>
-</div>
-<div class="row">
-    <div class="logo-bg banner-height d-flex justify-content-center align-items-center">
-        <h2 class="fs-1 fw-bold text-black">Photography</h2>
-    </div>
-    <div class="grey-bg">
-        <div class="row justify-content-center mt-5">
-            <div class="col-6">
-                <img class="img-fluid" src="images/Photography/japan4.jpg" alt="tori gates">
-                <img class="img-fluid my-3" src="images/Photography/japan1.JPG" alt="sake barrel offering">
-                <img class="img-fluid" src="images/Photography/japan3.jpg" alt="bridge in hiroshima">
-            </div>
-            <div class="col-4 d-flex flex-column justify-content-between">
-                <img class="img-fluid" src="images/Photography/japan8.jpg" alt="kamakura daibutsu">
-                <img class="img-fluid" src="images/Photography/japan6.JPG" alt="shrine in hakone">
-            </div>
-        </div>
-        <div class="row justify-content-center mt-3">
-            <div class="col-4 d-flex flex-column justify-content-between">
-                <img class="img-fluid" src="images/Photography/japan2.jpg" alt="Lake in hiroshima">
-                <img class="img-fluid" src="images/Photography/japan5.JPG" alt="sign">
-                <img class="img-fluid" src="images/Photography/flowers.jpg" alt="flowers in a tree">
-            </div>
-            <div class="col-6">
-                <img class="img-fluid" src="images/Photography/japan7.JPG" alt="sake barrels">
-            </div>
-        </div>
-        <div class="work-space"></div>
-    </div>
-</div>
 
+<div class="ml-10 mt-5 flex flex-col gap-3 fixed bg-gray-700 p-3 rounded-3xl">
+    <a class="links text-2xl text-white hover:text-gray-50" href="https://www.linkedin.com/in/sofia-lopez-7250811ba/">
+        <i class="ti-linkedin"></i>
+    </a>
+    <a class="text-2xl text-white hover:text-gray-50" href="https://www.instagram.com/">
+        <i class="ti-instagram"></i>
+    </a>
+    <a class="text-2xl text-white hover:text-gray-50" href="https://www.facebook.com/">
+        <i class="ti-facebook"></i>
+    </a>
+</div>
+<section class="flex flex-col justify-between py-20 h-screen bg-black" data-color="black">
+    <div class="flex flex-col mx-auto justify-center gap-3 pt-20">
+        <h1 class="text-white font-bold text-9xl">Sofia Lopez</h1>
+        <h2 class="text-7xl text-white">Graphic Designer</h2>
+    </div>
+    <div class="flex flex-col items-center justify-center text-white">
+        <div class="flex justify-between items-center w-full px-36">
+            <a href="about-me.html" class="text-3xl hover:underline hover:text-gray-100">About me</a>
+            <div>
+                <h2 class="text-center text-3xl">Portfolio</h2>
+                <div class="mt-5">
+                    <i class="ti-arrow-down text-2xl float-element"></i>
+                </div>
+            </div>
+            <a href="contact-me.html" class="text-3xl hover:underline hover:text-gray-100">Contact me</a>
+        </div>
+    </div>
+</section>
+<section class="bg-white" data-color="white">
+    <div class="min-h-40"></div>
+    <div class="grid grid-cols-2 grid-flow-col gap-4 px-36">
+        <a href="print-media.html" class="border-2 border-black flex flex-col hover:bg-gray-100">
+            <div class="flex flex-nowrap w-full border-b-2 border-black">
+                <img class="w-1/2" alt="Japanese Wood blocking spread 1" src="images/Print/Woodblocking2024.jpg">
+                <img class="w-1/2" alt="Japanese Wood blocking spread 2" src="images/Print/Woodblocking20242.jpg">
+            </div>
+            <div class="p-4">
+                <p class="text-xl font-semibold">Print Media</p>
+                <div class="flex items-center gap-3">
+                    <p>View</p>
+                    <i class="ti-arrow-right"></i>
+                </div>
+            </div>
+        </a>
+        <a href="logos.html" class="border-2 border-black col-start-2 row-start-2">
+            <div class="flex flex-col">
+                <img class="border-b-2 border-black" alt="Sofire Graphics Logo" src="images/Logos/sofire-graphics-logo.jpg">
+                <div class="p-4">
+                    <p class="text-xl font-semibold">Logos</p>
+                    <div class="flex items-center gap-3">
+                        <p>View</p>
+                        <i class="ti-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="grid grid-cols-2 grid-flow-col gap-4 px-36">
+        <a href="branding.html" class="border-2 border-black">
+            <div class="flex flex-col">
+                <img class="border-b-2 border-black" alt="Cherry Splash Energy Drink" src="images/Branding/cherry-splash.jpg">
+                <div class="p-4">
+                    <p class="text-xl font-semibold">Branding</p>
+                    <div class="flex items-center gap-3">
+                        <p>View</p>
+                        <i class="ti-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<div class="min-h-96"></div>
+<footer class="bg-gray-700 flex flex-col gap-4 px-36">
+    <div class="min-h-10"></div>
+    <div class="flex justify-between items-center gap-5 text-white h-20">
+        <p class="text-2xl">Sofia Lopez</p>
+        <p class="text-2xl">sofireclaire@gmail.com</p>
+        <p class="text-2xl">Des Moines, IA</p>
+    </div>
+    <p class="text-white">© 2024</p>
+    <div class="min-h-10"></div>
+</footer>
 </body>
 </html>
