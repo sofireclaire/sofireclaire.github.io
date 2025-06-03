@@ -1,33 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --color-pink: #FEBFDA;
+    --color-yellow: #E9FC88;
+    --color-green: #94EA95;
+    --color-purple: #A593C3;
+    --color-purple-500: #84769C;
+    --color-off-white: #FFFAF4;
+}
 
 body{
-    font-family: 'Poppins', sans-serif;
-    transition: background-color 1s ease;
+    font-family: 'Lexend', sans-serif;
 }
 
 .image-fit{
     @apply h-full w-full object-contain;
-}
-
-.pixel-img{
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
-}
-
-.float-element {
-    left: 48%;
-    @apply absolute;
-    animation: MoveUpDown 2s linear infinite;
-}
-
-@keyframes MoveUpDown {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
 }

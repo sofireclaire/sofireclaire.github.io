@@ -6,96 +6,150 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/Logos/Pink_SL_Logo.png">
+    <link rel="icon" type="image/x-icon" href="/images/logos/sl-logo.png">
 </head>
-<body>
-
-<div class="ml-10 mt-5 flex flex-col gap-3 fixed bg-gray-700 p-3 rounded-3xl">
-    <a class="links text-2xl text-white hover:text-gray-50" href="https://www.linkedin.com/in/sofia-lopez-7250811ba/">
-        <i class="ti-linkedin"></i>
-    </a>
-    <a class="text-2xl text-white hover:text-gray-50" href="https://www.instagram.com/">
-        <i class="ti-instagram"></i>
-    </a>
-    <a class="text-2xl text-white hover:text-gray-50" href="https://www.facebook.com/">
-        <i class="ti-facebook"></i>
-    </a>
+<body class="bg-off-white">
+<div class="flex justify-center items-center bg-pink py-15 px-5 border-y-3 mt-5 mb-20">
+    <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black">Sofia Lopez</h1>
 </div>
-<section class="flex flex-col justify-between py-20 h-screen bg-black" data-color="black">
-    <div class="flex flex-col mx-auto justify-center gap-3 pt-20">
-        <h1 class="text-white font-bold text-9xl">Sofia Lopez</h1>
-        <h2 class="text-7xl text-white">Graphic Designer</h2>
-    </div>
-    <div class="flex flex-col items-center justify-center text-white">
-        <div class="flex justify-between items-center w-full px-36">
-            <a href="about-me.html" class="text-3xl hover:underline hover:text-gray-100">About me</a>
-            <div>
-                <h2 class="text-center text-3xl">Portfolio</h2>
-                <div class="mt-5">
-                    <i class="ti-arrow-down text-2xl float-element"></i>
+
+<main class="grid grid-cols-12">
+    <div class="col-start-2 col-span-10 flex flex-col gap-5">
+        <div class="w-fit rounded-3xl bg-yellow border-3 px-7 py-3">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center">Projects</h2>
+        </div>
+
+        <!--    New Life Dent Repair  -->
+        <div class="flex flex-col gap-3 border-3 rounded-3xl px-3 sm:px-5 md:px-10 py-10 md:py-15 lg:py-20">
+            <h3 class="text-2xl font-bold">New Life Dent Repair</h3>
+            <div class="flex flex-wrap gap-3 items-center">
+                <div class="bg-pink border-3 rounded-xl px-7 py-2">
+                    Client
+                </div>
+                <div class="bg-green border-3 rounded-xl px-7 py-2">
+                    Website
+                </div>
+                <div class="bg-yellow border-3 rounded-xl px-7 py-2">
+                    Social Media
                 </div>
             </div>
-            <a href="contact-me.html" class="text-3xl hover:underline hover:text-gray-100">Contact me</a>
+            <p class="w-full md:w-3/4 lg:w-2/3">
+                New Life Dent Repair is a paintless dent removal business located in Ankeny, Iowa. I redesigned their
+                website and refreshed their branding to better reflect their unique superhero-themed identity.
+                Additionally, I managed their social media launch and grew their follower count by over 100 within the
+                first month.
+            </p>
+            <div class="grid grid-cols-2 gap-3">
+                <img class="col-span-2 lg:col-span-1 rounded-3xl w-full" src="images/dent-dan/dent-dan-banner.png" alt="New Life Dent Repair Banner Logo">
+                <img class="col-span-2 lg:col-span-1 rounded-3xl w-full" src="images/dent-dan/dent-dan-website.png" alt="New Life Dent Repair Website Home">
+            </div>
+            <div class="grid grid-cols-6 gap-3">
+                <img class="col-span-6 lg:col-span-3" src="images/dent-dan/dent-dan-website-2.png" alt="New Life Dent Repair Website 2">
+                <img class="col-span-2 lg:col-span-1 w-full" src="images/dent-dan/dent-dan-mobile.png" alt="New Life Dent Repair Website Mobile">
+                <img class="col-span-2 lg:col-span-1 w-full" src="images/dent-dan/dent-dan-mobile-2.png" alt="New Life Dent Repair Website Mobile 2">
+                <img class="col-span-2 lg:col-span-1 w-full" src="images/dent-dan/dent-dan-mobile-3.png" alt="New Life Dent Repair Website Mobile 3">
+            </div>
+            <div class="flex items-center">
+                <a href="https://newlifedentrepair.com/" class="bg-purple hover:bg-purple-500 flex gap-3 items-center border-3 rounded-xl px-7 py-3">
+                    View the website
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+        <!--    BK Slayz Nailz  -->
+        <div class="flex flex-col gap-3 border-3 rounded-3xl px-3 sm:px-5 md:px-10 py-10 md:py-15 lg:py-20">
+            <h3 class="text-2xl font-bold">BK Slayz Nailz</h3>
+            <div class="flex flex-wrap gap-3 items-center">
+                <div class="bg-pink border-3 rounded-xl px-7 py-2">
+                    Client
+                </div>
+                <div class="bg-green border-3 rounded-xl px-7 py-2">
+                    Logo
+                </div>
+            </div>
+            <p class="w-full md:w-3/4 lg:w-2/3">
+                BK Slayz Nails is a woman-owned nail studio focused on delivering high-quality beauty services. I worked
+                closely with the owner to create a unique logo and brand identity that reflected her style and the spirit
+                of her business. The final design was crafted and refined in Adobe Illustrator to achieve a clean,
+                professional look.
+            </p>
+            <div class="w-full">
+                <img class="rounded-4xl" src="images/logos/bk-slayz.png" alt="BK Slayz Nailz Logo">
+            </div>
+        </div>
+        <!--    Cherry Splash Energy  -->
+        <div class="flex flex-col gap-3 border-3 rounded-3xl px-3 sm:px-5 md:px-10 py-10 md:py-15 lg:py-20">
+            <h3 class="text-2xl font-bold">Product Design</h3>
+            <div class="flex flex-wrap gap-3 items-center">
+                <div class="bg-pink border-3 rounded-xl px-7 py-2">
+                    Personal Project
+                </div>
+                <div class="bg-green border-3 rounded-xl px-7 py-2">
+                    Branding
+                </div>
+            </div>
+            <p class="w-full md:w-3/4 lg:w-2/3">
+                I developed two unique product concepts to explore visual branding and packaging. The first was an
+                energy drink brand targeting young adults, featuring a bold, modern design created in Illustrator and
+                brought to life with Photoshop mockups. The second was a fall-themed “Pumpkin Serum,” where I focused
+                on creating a warm, seasonal feel through thoughtful color choices, typography, and layout.
+            </p>
+            <div class="grid grid-cols-2 gap-3">
+                <img class="col-span-2 lg:col-span-1 w-full rounded-4xl" src="images/product/cherry-splash.jpg" alt="Cherry Splash Energy Drink">
+                <img class="col-span-2 lg:col-span-1 w-full rounded-4xl" src="images/product/pumpkin-oil-mockup.jpg" alt="Pumpkin essential oil mockup">
+            </div>
+        </div>
+        <!--    Town Restaurant  -->
+        <div class="flex flex-col gap-3 border-3 rounded-3xl px-3 sm:px-5 md:px-10 py-10 md:py-15 lg:py-20">
+            <h3 class="text-2xl font-bold">Marketing and Print Media</h3>
+            <div class="flex flex-wrap gap-3 items-center">
+                <div class="bg-pink border-3 rounded-xl px-7 py-2">
+                    Personal Project
+                </div>
+                <div class="bg-green border-3 rounded-xl px-7 py-2">
+                    Print Media
+                </div>
+            </div>
+            <p class="w-full md:w-3/4 lg:w-2/3">
+                As part of a class project, I designed a new set of menus for a high-end Chinese restaurant, staying
+                true to its brand and traditional cuisine. I created a custom cocktail menu and original illustrations
+                to enhance the dining experience, using Adobe Illustrator and InDesign to deliver a visually consistent design.
+            </p>
+            <div class="grid grid-cols-2 gap-3">
+                <img class="col-span-2 lg:col-span-1 w-full rounded-4xl" src="images/print/town-menu.png" alt="Town Menu">
+                <img class="col-span-2 lg:col-span-1 w-full rounded-4xl" src="images/print/town-drink-menu.jpg" alt="Town Drink Menu">
+            </div>
+        </div>
+        <!--    Sofire Graphics  -->
+        <div class="flex flex-col gap-3 border-3 rounded-3xl px-3 sm:px-5 md:px-10 py-10 md:py-15 lg:py-20">
+            <h3 class="text-2xl font-bold">Logo Design</h3>
+            <div class="flex flex-wrap gap-3 items-center">
+                <div class="bg-pink border-3 rounded-xl px-7 py-2">
+                    Personal Project
+                </div>
+                <div class="bg-green border-3 rounded-xl px-7 py-2">
+                    Logo
+                </div>
+            </div>
+            <p class="w-full md:w-3/4 lg:w-2/3">
+                I created a logo for a fictional graphic design studio as part of a branding exercise. The goal was to
+                develop a strong, eye-catching identity with a clear concept behind it. I finalized the design in Adobe
+                Illustrator to keep it clean and professional.
+            </p>
+            <div class="w-full">
+                <img class="rounded-4xl max-h-80" src="images/logos/sofire-graphics-logo.jpg" alt="Sofire Graphics Logo">
+            </div>
         </div>
     </div>
-</section>
-<section class="bg-white" data-color="white">
-    <div class="min-h-40"></div>
-    <div class="grid grid-cols-2 grid-flow-col gap-4 px-36">
-        <a href="print-media.html" class="border-2 border-black flex flex-col hover:bg-gray-100">
-            <div class="flex flex-nowrap w-full border-b-2 border-black">
-                <img class="w-1/2" alt="Japanese Wood blocking spread 1" src="images/Print/Woodblocking2024.jpg">
-                <img class="w-1/2" alt="Japanese Wood blocking spread 2" src="images/Print/Woodblocking20242.jpg">
-            </div>
-            <div class="p-4">
-                <p class="text-xl font-semibold">Print Media</p>
-                <div class="flex items-center gap-3">
-                    <p>View</p>
-                    <i class="ti-arrow-right"></i>
-                </div>
-            </div>
-        </a>
-        <a href="logos.html" class="border-2 border-black col-start-2 row-start-2">
-            <div class="flex flex-col">
-                <img class="border-b-2 border-black" alt="Sofire Graphics Logo" src="images/Logos/sofire-graphics-logo.jpg">
-                <div class="p-4">
-                    <p class="text-xl font-semibold">Logos</p>
-                    <div class="flex items-center gap-3">
-                        <p>View</p>
-                        <i class="ti-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-        </a>
+</main>
+<footer class="w-full my-5 bg-pink border-y-3 px-10 py-10">
+    <div class="flex gap-3 items-center">
+        <span class="material-symbols-outlined">mail</span>
+        <a href="mailto:sofireclaire@gmail.com" class="text-xl text-wrap overflow-auto">sofireclaire@gmail.com</a>
     </div>
-    <div class="grid grid-cols-2 grid-flow-col gap-4 px-36">
-        <a href="branding.html" class="border-2 border-black">
-            <div class="flex flex-col">
-                <img class="border-b-2 border-black" alt="Cherry Splash Energy Drink" src="images/Branding/cherry-splash.jpg">
-                <div class="p-4">
-                    <p class="text-xl font-semibold">Branding</p>
-                    <div class="flex items-center gap-3">
-                        <p>View</p>
-                        <i class="ti-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
-</section>
-<div class="min-h-96"></div>
-<footer class="bg-gray-700 flex flex-col gap-4 px-36">
-    <div class="min-h-10"></div>
-    <div class="flex justify-between items-center gap-5 text-white h-20">
-        <p class="text-2xl">Sofia Lopez</p>
-        <p class="text-2xl">sofireclaire@gmail.com</p>
-        <p class="text-2xl">Des Moines, IA</p>
-    </div>
-    <p class="text-white">© 2024</p>
-    <div class="min-h-10"></div>
 </footer>
 </body>
 </html>
